@@ -7,7 +7,7 @@ const wss = new WebSocket.Server({
 
 wss.on('connection', ws => {
 
-    console.info("Total connected:", wss.clients.size);
+    console.info("Total connected:", wss.clients.size); 
 
 
     ws.on('message', data => {
@@ -29,3 +29,6 @@ wss.on('connection', ws => {
     })
 
 })
+
+
+module.exports = router;
